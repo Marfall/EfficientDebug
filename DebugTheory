@@ -1,0 +1,172 @@
+PLACE BREAKPOINTS AND RUN A PROGRAM IN DEBUG MODE:
+
+        Debugging:
+
+            - Is the process by which we can look for the issues in our code to detect them and find 
+              a proper way to resolve them.
+
+
+        Breakpoints (Line Brakepoints):
+
+
+            - These are basically markers placed within the code in an editor where the program flaw(изъян)
+              would be lost if the program run in debug-mode.
+
+
+        - Right click on the code and click debug needed method  or class
+
+        - The line will be marked as blue so the prigram is currently running in debug mode and the flow has paused at this line,
+          and at the bottom we can see a few things:
+
+            1) Variables Section:
+
+            2) Debugger Window
+
+
+        - What's happened here:
+
+            - The program flow has paused means the line is not executed yet.
+
+              => We can control the flow of the prigram in the Debug Window:
+
+
+        - These are a few important buttons for debugging purpose:
+
+
+            1) Step Over (F8):
+
+                - Control would flow to the next line;
+
+
+            2) Resime Program (F9):
+
+                - Contol Flow will resume and it will pause at the Next Breakpoint.
+
+                - Previous Line Breakpoint has been executed
+
+
+
+CONTROL A PROGRAM EXECUTION DURING DEBUGGING:
+
+
+        - In Debugging is very important  to control the flow of the Execution;
+
+        - Step Over (F8):
+
+            - Is operation by which we can proceed line by line while application debugging;
+            - iIs used to nove the control line by line.
+
+        - Step Into (F7):
+
+            - If we want to go into this particular method;
+
+              => Control has come inside the method. We can debug it line by line clicking step over and see what is
+                 happening inside the method. 
+                
+            - Now we can see in the Variable Section what is the value of the input, what is the result, what is the input.length
+
+        
+        - Step Out (Shift + F8):
+
+            - Move out from this particular method.
+
+
+
+SMART STEP INTO AND RUN TO CURSOR:
+
+      Smart Step Into:
+
+        - During debugging there are scenarios where we have multiple method calls in a single line.
+
+        - In scenarios like this, Smart Step Into becomes very useful.
+
+        - Go to Run - Debugging Actions - Smart Step Into (Shift + F7),
+          and it would higjlight different methods where you want to step in.
+
+        - And you can choose nesessary method.
+
+        - The Control has come to this method and it us returning the value of name  (in the method getName() for example).
+
+        - So, from here we can continue te debuggin or we can return back using Step Out;
+
+    
+      Run to Cursor:
+
+        - Suppose your proprm is running in Debug Mode. And you want to move the Control Flow to a particular line
+          Without placing any breakpoints. 
+
+        - In that case Move to Cursor is very useful.
+
+        - Go to Run - Debugging Actions - Run To Cursor (Alt + Shift + 9)
+
+        - So, you can see over here the Control has come to  line, where was the Cursor.
+
+
+      Force Run To Cursor:
+
+        - It would ignore any existing Breakpoints;
+
+        - If you will do this with simple Run To Cursor - Control will be blocked in exeisting Breakpoint.
+
+
+
+WATCH AND EVALUATE EXPRESSIONS:
+
+
+    Wathches:
+
+    - When a program is in Debug Mode and the Control Flow hits the Breakpoints, we can see the internal Variables 
+      of that particular program within the Variable Section.
+
+    - But there could be scenarios wehere we need to track more complex expressions, which are not the part of Code File itself.
+
+    - How Watches can be added by default:
+
+        - By default, the Watch Section is within the Variable Section - It's Glass Icon.
+
+        - We can add or remove Warches by ckicking plus ion here.
+
+        - We can also add one particular variable directly to the Watch Section by clicking on the top of that Variable,
+          right click and then add to Watches.
+
+        - Now, if we move with the Flow with Resume Button , we can see this Watch Expression being populated.
+
+        - So, instead of only the person object what we can view - is different expressions, as we can se over here,
+          this  person object has different arguments and they get the methods.
+
+        - So, let me check  or all objects wheter the age of the person is greater than 30 or not. person.getAge() > 30
+
+        - So, I type the Expression in the Watch Section and if we now move the Control of the Program,
+          We can view for all objects the age is greater than 30 or not.
+
+
+    Evaluate Expressions:
+
+        - Evaluate Expressions allows us to evaluate any expressions during the program runtime.
+
+        - We can click on that particular variable right click and then go to Evaluate Expression:
+
+          - So, we can see over here - there is content assessed we can type any expression we want and click on Evaluate.
+
+          - It would return the result over here.
+
+
+        =>  -  Similary, any other expression can be evaluated here. 
+
+            - Evaluated enables you to get the value of any expression - One Expression, whereas in case of Wathces the added
+              Watch remains there for the entire program.
+
+
+
+    =>  - So, if we want to evaluate one value at a time  Evaluate is good, but if we want to get the variables throughout 
+          the program - say for a loop variables value would be getting repeated times then using Watches is an easier,
+          and also in the Watches we can ad multiple Watches, so multiple expressions can be evaluated pretty easier.
+
+
+
+INSPECT VARIABLES - VIEW VARIABLES VALUES:
+
+
+
+      
+
