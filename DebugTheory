@@ -167,6 +167,63 @@ WATCH AND EVALUATE EXPRESSIONS:
 INSPECT VARIABLES - VIEW VARIABLES VALUES:
 
 
+      - In Intellij Idea there are various ways to view the Variables Values during a Debug Session;
 
-      
+      - We want to view some variables int the Context of the runnning program:
+
+        1) One wawy to view the Variables is to go to the Variable Section
+
+        2 Another way is the Inline View 
+
+            - After each line the values are shown like i: 100, when we see a List, we see the size of List;
+
+            - One difference is we cannnot see the details of the personally subject the way we saw in Variables Section;
+
+        3) Tooltip:
+
+            - If you go to the particular value and hover on top, you can see it's value with size (List);
+
+            - If you expand it - you will see the details the way you saw in The Variables Section;
+
+
+
+CHANGE VARIABLES VALUE AT REAL TIME DURING  DEBUG SESSION:
+
+
+      - An Intellij Idea it is possible yo change the values of Variable during the Debug Session in order.
+
+      - How to change the value of primtive  Variable:
+
+          - We an select this particular variable in Variables Section and click F2 or Set Value in context menu;
+
+          - You can see over here the value in Inline Values changed;
+
+          - Then finish the exxecution by pressing Resume Button;
+
+          - Then if I go to the Console, we can see - the value has changed;
+
+
+
+FILTER ARRAYS AND COLLECTIONS IN VARIABLES OR WATCHES:
+
+
+      - While debuging in Intellij Idea we can  filter the arrays or collections, which appear in the ariable Section or
+        the Watch Section.
+
+      - There are different scenarios whwre we need to filter out this arrays or collections depending on our need while we debugging.
+
+      - So, how to filter them out? 
+
+        - Hit the program at particular line;
+
+        - You can see in the Variable Section the List - click filter on it and set condition (this.age > 20 for example)
+
+        - So. this way we can filter the array and we can remove this filter condition as well.
+
+        - How to filter a Map:
+
+            
+
+
+
 
